@@ -1,11 +1,21 @@
+# Python caches
 __pycache__/
 *.pyc
 *.pyo
+
+# Secrets
 .env
+
+# Local dev envs & IDE settings
 .venv/
 .vscode/
 .idea/
-pgdata/
-pytest_cache/
-.DS_Store
 
+# Docker PostgreSQL container data (should not version raw DB files)
+pgdata/
+
+# Test runner cache
+pytest_cache/
+
+# macOS system junk
+.DS_Store
