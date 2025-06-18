@@ -66,3 +66,5 @@ def delete_record(record_id: int):
         return {"detail": f"Record {record_id} deleted"}
     finally:
         db.close()
+
+
