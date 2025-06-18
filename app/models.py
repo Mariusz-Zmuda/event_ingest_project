@@ -12,6 +12,7 @@ class TrackerRecord(Base):
     user_id = Column(Integer, nullable=False)           
     date = Column(Date, nullable=False)                 
     steps = Column(Integer, nullable=False)          
-    heart_rate_avg = Column(Integer)                    # optional
-    calories_burned = Column(Integer)                   # optional
-    workout_type = Column(String)                    
+    heart_rate_avg = Column(Integer, nullable=True)
+    calories_burned = Column(Integer, nullable=True)
+    workout_type = Column(String, nullable=True)
+                 
