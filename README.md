@@ -16,6 +16,7 @@ This project is a simple CRUD backend for managing fitness tracker data using **
 pip install -r requirements.txt
 
 ![Install dependencies](images/01-install-dependencies.png)
+------------------------------------------------------------------
 
 ### 2. Start PostgreSQL using Docker
 
