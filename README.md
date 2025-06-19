@@ -2,29 +2,31 @@
 
 This project is a simple CRUD backend for managing fitness tracker data using **Python**, **FastAPI**, and **PostgreSQL**.
 
-## 🔥 Features
+## Features
 
 - REST API for Create, Read, Update, and Delete tracker records
 - Bulk CSV loader to import fitness tracker data
 - Dockerized PostgreSQL database for easy setup
 - Clean test automation with `pytest`
 
-## ⚡ Quick Start
+## Quick Start
 
-### 1️⃣ Install Python dependencies
+### 1. Install Python dependencies
 
 pip install -r requirements.txt
 
 ![Install dependencies](images/01-install-dependencies.png)
 
-### 2️⃣ Start PostgreSQL using Docker
+### 2. Start PostgreSQL using Docker
 
 docker-compose up -d
 
 ![Docker Desktop](images/02a-docker-desktop.png)  
 ![Docker Compose](images/02b-docker-compose.png)
 
-### 3️⃣ Run the FastAPI app
+------------------------------------------------------------------
+
+### 3. Run the FastAPI app
 
 uvicorn app.main:app --reload
 
@@ -39,16 +41,20 @@ uvicorn app.main:app --reload
 Open your browser: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)  
 Test all endpoints interactively.
 
-### 4️⃣ Bulk load the CSV data
+------------------------------------------------------------------
+
+### 4. Bulk load the CSV data
 
 python load_csv.py
 
-### 5️⃣ Run API tests
+------------------------------------------------------------------
+
+### 5. Run API tests
 
 pytest tests/
 
 ![Load CSV & Pytest](images/04-05-load-csv-pytest.png)
-
+------------------------------------------------------------------
 ## 📂 Project Structure
 
 fitness_tracker_api/  
@@ -80,7 +86,7 @@ fitness_tracker_api/
       ├── 03f-FINAL-uvicorn-main.png  
       ├── 04-05-load-csv-pytest.png
 
-## 📎 Notes
+## Notes
 
 This project does **not** use a real AWS SQS queue yet — it focuses on core CRUD and CSV ingestion.  
 Easily extendable to real event-driven queues in production.
