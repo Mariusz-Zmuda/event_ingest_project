@@ -67,13 +67,5 @@ fitness_tracker_api/
 
 ## Notes
 
-This project does **not** use a real AWS SQS queue yet — it focuses on core CRUD and CSV ingestion.  
+This project does not use a real AWS SQS queue yet — it focuses on core CRUD and CSV ingestion.
 Easily extendable to real event-driven queues in production.
-
-## ✅ Commit & Push
-
-```bash
-git add README.md
-git commit -m "docs: add final single-block README"
-git push
-```
